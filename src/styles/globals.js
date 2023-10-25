@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
         --text-primary: var(--gray-50);
 
         --weight-regular: 400;
+        --weight-medium: 500;
     
         body {
             display: flex;

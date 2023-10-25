@@ -2,20 +2,18 @@ import styled from 'styled-components';
 
 export const StyledImageContainer = styled.div`
 	position: relative;
-	display: flex;
-	flex-direction: column;
 	width: 100%;
-	max-width: 25rem;
-	height: 25rem;
+	height: clamp(25rem, 21.479rem + 15.023vw, 35rem);
+	max-width: 1200px;
 `;
 
 export const StyledWrapper = styled.div`
-	align-items: center;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	height: 100vh;
-	margin-top: var(--space-xl-2xl);
+	justify-content: center;
+	align-items: center;
+
 
 	h2 {
 		font-weight: var(--weight-regular);

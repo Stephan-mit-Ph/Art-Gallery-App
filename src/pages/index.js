@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import Spotlight from '@/components/Spotlight';
 
 export default function SpotlightPage({ pieces, artPiecesInfo, onToggleFavorite }) {
@@ -7,9 +5,7 @@ export default function SpotlightPage({ pieces, artPiecesInfo, onToggleFavorite 
 
 	return (
 		<>
-			<Head>
-				<title>Art Gallery - Spotlight</title>
-			</Head>
+		
 			{spotlightPiece && (
 				<Spotlight
 					image={spotlightPiece.imageSource}

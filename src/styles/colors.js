@@ -31,7 +31,7 @@ export const colors = `
     --primary-50: rgba(253, 240, 247, 1);
     --primary-100: rgba(247, 208, 231, 1);
     --primary-200: rgba(244, 185, 220, 1);
-    ---primary-300: rgba(238, 152, 204, 1);
+    --primary-300: rgba(238, 152, 204, 1);
     --primary-400: rgba(235, 133, 194, 1);
     --primary-500: rgba(230, 102, 179, 1);
     --primary-600: rgba(209, 93, 163, 1);
