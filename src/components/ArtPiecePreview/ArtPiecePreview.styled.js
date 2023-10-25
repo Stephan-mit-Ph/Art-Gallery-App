@@ -46,7 +46,8 @@ export const StyledInfo = styled.div`
   }
 
   p {
-    margin-top: 5px 0;
-    padding: 15px 0 0 5px;
+    padding: 10px 0 0 5px;
+    margin-bottom: 15px;
   }
+
 `;
