@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
 					<Spotlight />
 				</Link>
 				<Link
-					href='/'
+					href='/favorites'
 					aria-label='
       Favorites page'
 				>

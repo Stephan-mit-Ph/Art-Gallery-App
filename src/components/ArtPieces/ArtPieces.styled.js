@@ -3,16 +3,16 @@ import styled from 'styled-components';
 export const StyledList = styled.ul`
 	list-style: none;
 	width: 100%;
-	padding: 0;
-	margin: var(--space-l-xl) 0;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	
 
   h2 {
     font-weight: var(--weight-regular);
+
   }
 
 	li {
