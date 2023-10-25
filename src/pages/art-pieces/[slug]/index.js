@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import ArtPiecesDetails from '@/components/ArtPiecesDetails';
 
-export default function ArtPiecesDetailsPage({
+export default function ArtPieceDetailsPage({
 	pieces,
 	artPiecesInfo,
 	onToggleFavorite,
@@ -26,7 +26,9 @@ export default function ArtPiecesDetailsPage({
 		return () => clearTimeout(timeoutId);
 	}, [selectedArtPiece, router]);
 
-
+	const selectedArtPieceComments = artPiecesInfo.find(
+		(piece) => piece.slug === selectedArtPiece?.slug
+	)?.comments;
 
 	if (!selectedArtPiece) {
 		return null;
@@ -40,6 +42,11 @@ export default function ArtPiecesDetailsPage({
 			artist={selectedArtPiece.artist}
 			year={selectedArtPiece.year}
 			genre={selectedArtPiece.genre}
+			isFavorite={artPiecesInfo.find((piece) => piece.slug === selectedArtPiece.slug)?.isFavorite}
+			onToggleFavorite={() => onToggleFavorite(selectedArtPiece.slug)}
+			colors={selectedArtPiece.colors}
+			comments={selectedArtPieceComments}
+			addComment={(newComment) => addComment(selectedArtPiece.slug, newComment)}
 		/>
 	);
 }

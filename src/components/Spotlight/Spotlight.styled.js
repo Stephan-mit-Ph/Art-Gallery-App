@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const StyledImageContainer = styled.div`
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	max-width: 25rem;
 	height: 25rem;

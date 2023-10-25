@@ -42,10 +42,8 @@ export const StyledHeader = styled.header`
 
 export const StyledMain = styled.main`
 	display: flex;
+	height: 100vh	;
 	flex-direction: column;
-	flex: 1;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
 	margin-top: var(--space-m-l);
 	padding: var(--space-xl-2xl) 0 6rem 0;

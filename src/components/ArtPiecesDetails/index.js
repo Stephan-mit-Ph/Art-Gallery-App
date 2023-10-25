@@ -1,20 +1,34 @@
-import { StyledImage } from '../StyledImage';
 import {
 	StyledWrapper,
 	StyledList,
 	StyledBackButton,
 	StyledImageContainer,
+	StyledImage,
 } from './ArtPieceDetails.styled';
 import { ArrowLeft } from '@/components/Icons';
-export default function ArtPiecesDetails({ image, title, artist, year, genre, onBack }) {
+import FavoriteButton from '../FavoriteButton';
+export default function ArtPiecesDetails({
+	image,
+	title,
+	artist,
+	year,
+	genre,
+	onBack,
+	isFavorite,
+	onToggleFavorite,
+}) {
 	return (
 		<StyledWrapper>
 			<StyledBackButton type='button' onClick={onBack} aria-label='navigate back'>
 				<ArrowLeft />
 			</StyledBackButton>
 			<h2>{title}</h2>
-
 			<StyledImageContainer>
+				<FavoriteButton
+					isFavorite={isFavorite}
+					onToggleFavorite={onToggleFavorite}
+					positionAbsolute={true}
+				/>
 				<StyledImage
 					src={image}
 					priority

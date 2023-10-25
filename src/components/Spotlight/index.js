@@ -1,11 +1,17 @@
 import { StyledImage } from '@/components/StyledImage';
 import { StyledImageContainer, StyledWrapper } from './Spotlight.styled';
+import FavoriteButton from '@/components/FavoriteButton';
 
-export default function Spotlight({ image, artist }) {
+export default function Spotlight({ image, artist, onToggleFavorite, isFavorite }) {
 	return (
 		<StyledWrapper>
-			<h2>Spotlight</h2>
+	<h2>Spotlight</h2>
 			<StyledImageContainer>
+				<FavoriteButton
+					isFavorite={isFavorite}
+					onToggleFavorite={onToggleFavorite}
+					positionAbsolute={true}
+				/>
 				<StyledImage
 					src={image}
 					fill
