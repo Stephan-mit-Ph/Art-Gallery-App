@@ -5,6 +5,7 @@ import {
 	StyledImageContainer,
 	StyledImage,
 	StyledActionContainer,
+	StyledColor,
 } from './ArtPieceDetails.styled';
 import CommentForm from '@/components/CommentForm';
 import Comments from '@/components/Comments';
@@ -21,6 +22,7 @@ export default function ArtPiecesDetails({
 	onToggleFavorite,
 	addComment,
 	comments,
+	colors,
 }) {
 	return (
 		<StyledWrapper>
@@ -40,6 +42,11 @@ export default function ArtPiecesDetails({
 					alt={`${artist}: ${title}`}
 				/>
 			</StyledImageContainer>
+			<StyledList role='list'>
+				{colors.map((color, index) => (
+				<StyledColor key={index} color={color} aria-label={color} />
+				))}
+			</StyledList>
 			<StyledList>
 				<li>@{artist}</li>
 				<li>{year}</li>
