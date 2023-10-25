@@ -2,20 +2,22 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 export const StyledImage = styled(Image)`
-  object-fit: cover;
+	object-fit: cover;
 `;
 
 export const StyledWrapper = styled.section`
 	display: flex;
-	margin-top: 5rem;
+	width: 100%;
+	padding-top: 3rem;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 	h2 {
 		font-weight: var(--weight-regular);
-		text-align: center;
+		width: clamp(21.875rem, 9.39vw + 19.674rem, 28.125rem);
 		font-size: var(--step-1);
-		margin: 1rem 0 0 0;
+		margin: 0.4rem 0 0 0;
 	}
 
 	p {
@@ -25,20 +27,20 @@ export const StyledWrapper = styled.section`
 
 export const StyledImageContainer = styled.div`
 	position: relative;
-	width: 100%;
-	height: 100%;
-	max-width: 400px;
-	min-height: 400px;
-	overflow: hidden;
+	width: clamp(21.875rem, 9.39vw + 19.674rem, 28.125rem);
+	height: clamp(21.875rem, 9.39vw + 19.674rem, 28.125rem);
 `;
 
 export const StyledList = styled.ul`
 	list-style: none;
 	display: flex;
-	gap: 0.5rem;
+	width: clamp(21.875rem, 9.39vw + 19.674rem, 28.125rem);
 	flex-wrap: wrap;
-	justify-content: center;
-	padding-left: 0;
+	justify-content: space-between;
+
+	li {
+		margin-bottom: 0.5rem;
+	}
 `;
 
 export const StyledBackButton = styled.button`
@@ -47,11 +49,14 @@ export const StyledBackButton = styled.button`
 	color: var(--text-primary);
 	display: flex;
 	font-size: var(--step-0);
-	align-items: center;
-	justify-content: center;
-	padding-bottom: 0.5rem;
 
 	svg {
-		font-size: 2.8rem;
+		font-size: 2rem;
 	}
+`;
+
+export const StyledActionContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	gap: 12rem;
 `;

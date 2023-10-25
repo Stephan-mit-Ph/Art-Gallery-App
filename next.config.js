@@ -14,6 +14,7 @@ const nextConfig = {
 		return config;
 	},
 	images: {
+		domains: ['example-apis.vercel.app/api/art'],
 		remotePatterns: [
 			{
 				protocol: 'https',

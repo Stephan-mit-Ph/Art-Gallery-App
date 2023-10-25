@@ -6,12 +6,13 @@ export const StyledList = styled.ul`
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	
 
   h2 {
     font-weight: var(--weight-regular);
+	padding: 1rem 0;
 
   }
 

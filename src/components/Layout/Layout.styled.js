@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const StyledLayout = styled.div`
 	display: flex;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 `;
 
@@ -27,7 +31,7 @@ export const StyledHeader = styled.header`
 			position: absolute;
 			width: 0;
 			height: 1px;
-			bottom: 0;
+			bottom: 10px;
 			left: 50%;
 			background-color: var(--text-primary);
 			transition: width 0.5s;
@@ -42,11 +46,13 @@ export const StyledHeader = styled.header`
 
 export const StyledMain = styled.main`
 	display: flex;
-	height: 100vh	;
+	min-height: 100vh;
+	justify-content: center;
+	overflow: scroll;
+	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	margin-top: var(--space-m-l);
-	padding: var(--space-xl-2xl) 0 6rem 0;
+	padding: var(--space-2xl-3xl) 0 6rem 0;
 `;
 
 export const StyledNavigation = styled.nav`

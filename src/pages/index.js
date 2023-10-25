@@ -7,9 +7,7 @@ export default function SpotlightPage({ pieces, artPiecesInfo, onToggleFavorite 
 
 	return (
 		<>
-			<Head>
-				<title>Art Gallery - Spotlight</title>
-			</Head>
+		
 			{spotlightPiece && (
 				<Spotlight
 					image={spotlightPiece.imageSource}
