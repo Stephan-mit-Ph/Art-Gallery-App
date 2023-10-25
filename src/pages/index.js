@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import Spotlight from '@/components/Spotlight';
 
 export default function SpotlightPage({ pieces, artPiecesInfo, onToggleFavorite }) {

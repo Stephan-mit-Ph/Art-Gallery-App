@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledLayout = styled.div`
+	height: 100vh;
 	display: flex;
-
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
+	padding: var(--space-2xl-3xl) 0;
 `;
 
 export const StyledHeader = styled.header`
@@ -45,31 +43,6 @@ export const StyledHeader = styled.header`
 `;
 
 export const StyledMain = styled.main`
-	display: flex;
-	min-height: 100vh;
-	justify-content: center;
-	overflow: scroll;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	padding: var(--space-2xl-3xl) 0 6rem 0;
-`;
+	overflow-y: scroll;
 
-export const StyledNavigation = styled.nav`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	gap: 3rem;
-	background-color: var(--surface-secondary);
-	margin-top: auto;
-	position: fixed;
-	bottom: 0;
-	z-index: 100;
-	padding: var(--space-xs-s);
-
-	svg {
-		font-size: 2.5rem;
-		margin: 5px 0;
-	}
 `;

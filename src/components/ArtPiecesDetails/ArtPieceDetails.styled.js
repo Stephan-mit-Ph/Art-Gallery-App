@@ -2,22 +2,23 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 export const StyledImage = styled(Image)`
-	object-fit: cover;
+	object-fit: contain;
 `;
 
 export const StyledWrapper = styled.section`
-	display: flex;
-	width: 100%;
-	padding-top: 3rem;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  padding: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  
 
 	h2 {
 		font-weight: var(--weight-regular);
 		width: clamp(21.875rem, 9.39vw + 19.674rem, 28.125rem);
 		font-size: var(--step-1);
-		margin: 0.4rem 0 0 0;
+		margin: 1rem   0;
+		text-align: center;
 	}
 
 	p {
@@ -27,8 +28,8 @@ export const StyledWrapper = styled.section`
 
 export const StyledImageContainer = styled.div`
 	position: relative;
-	width: clamp(21.875rem, 9.39vw + 19.674rem, 28.125rem);
-	height: clamp(21.875rem, 9.39vw + 19.674rem, 28.125rem);
+	width: 100%;
+	height: clamp(20rem, 16.489rem + 15.023vw, 30rem);
 `;
 
 export const StyledList = styled.ul`

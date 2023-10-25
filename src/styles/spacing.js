@@ -19,5 +19,5 @@ export const spacing = `
     --space-xl-2xl: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
     --space-2xl-3xl: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem);
 
-    --image-size: clamp(21.87rem, 50vw, 25rem);
+    --image-size: clamp(20rem, 16.479rem + 15.023vw, 30rem);
 `;
