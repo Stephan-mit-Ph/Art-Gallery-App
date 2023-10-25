@@ -1,8 +1,8 @@
-import { createGlobalStyle } from "styled-components";
-import { typography } from "./typography";
-import { reset } from "./reset";
-import { colors } from "./colors";
-import { spacing } from "./spacing";
+import { createGlobalStyle } from 'styled-components';
+import { typography } from './typography';
+import { reset } from './reset';
+import { colors } from './colors';
+import { spacing } from './spacing';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -29,8 +29,9 @@ const GlobalStyle = createGlobalStyle`
             font-family: var(--font-family);
             background-color: var(--surface-primary);
             color: var(--text-primary);
-            }        
-        }
+            }  
+            
+    }
 `;
 
 export default GlobalStyle;

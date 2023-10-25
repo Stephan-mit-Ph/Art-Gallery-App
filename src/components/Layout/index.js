@@ -8,8 +8,8 @@ const Layout = ({ children }) => {
 	return (
 		<StyledLayout>
 			<StyledHeader>
-				<Link href='/' aria-label='Homepage'>
-					Art Gallery
+				<Link href='/' aria-label='Art Galley'>
+					<h1>Art Gallery</h1>
 				</Link>
 			</StyledHeader>
 			<StyledMain>{children}</StyledMain>
