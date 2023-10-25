@@ -7,7 +7,7 @@ export const StyledWrapper = styled.section`
 	h2 {
 		font-weight: var(--weight-regular);
         text-align: center;
-        margin: 1rem 0;
+        margin: 1rem 0 0 0;
 	}
     
     p {
@@ -38,7 +38,7 @@ export const StyledBackButton = styled.button`
 	font-size: var(--step-0);
 	align-items: center;
     justify-content: center;
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
 
 	svg {
 		font-size: 2.8rem;
