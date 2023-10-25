@@ -38,7 +38,6 @@ export const StyledBackButton = styled.button`
 	font-size: var(--step-0);
 	align-items: center;
     justify-content: center;
-	border: 1px solid red;
     padding-bottom: 2rem;
 
 	svg {

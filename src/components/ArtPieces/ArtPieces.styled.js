@@ -4,7 +4,7 @@ export const StyledList = styled.ul`
 	list-style: none;
 	width: 100%;
 	padding: 0;
-	margin: var(--space-xl-2xl) 0;
+	margin: var(--space-l-xl) 0;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
