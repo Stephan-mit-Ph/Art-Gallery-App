@@ -13,18 +13,15 @@ export const StyledWrapper = styled.div`
 	flex-direction: column;
 	width: 100%;
 	height: 100vh;
-	justify-content: center;
+	margin-top: var(--space-xl-2xl);
 
 	h2 {
-		font-size: var(--step-3);
-		margin-bottom: 1rem;
 		font-weight: var(--weight-regular);
+		padding: 1rem 0;
 	}
 
 	h3 {
-		font-size: var(--step-0);
 		font-weight: var(--weight-regular);
 		padding-top: 1rem;
-
 	}
 `;
